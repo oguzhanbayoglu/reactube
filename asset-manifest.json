@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/reactube/static/css/main.fc7f8215.css",
+    "main.js": "/reactube/static/js/main.856a27d3.js",
+    "static/media/logo.png": "/reactube/static/media/logo.8a691d936337a784402b.png",
+    "index.html": "/reactube/index.html",
+    "main.fc7f8215.css.map": "/reactube/static/css/main.fc7f8215.css.map",
+    "main.856a27d3.js.map": "/reactube/static/js/main.856a27d3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc7f8215.css",
+    "static/js/main.856a27d3.js"
+  ]
+}
