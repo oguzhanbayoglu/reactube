@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import ReactPlayer from "react-player";
 
+import { useLocation } from "react-router-dom";
+
 import { Videos, Loader } from "./";
 import { fetchAPI } from "../utils/fetchAPI";
 import Comments from "./Comments";
@@ -11,6 +13,11 @@ const VideoDetails = () => {
   const [videos, setVideos] = useState(null);
   const [comments, setComments] = useState(null);
   const { id } = useParams();
+  const { pathname } = useLocation();
+  // Automatically scrolls to top whenever pathname changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   useEffect(() => {
     fetchAPI(`videos?part=snippet,statistics&id=${id}`).then((data) =>

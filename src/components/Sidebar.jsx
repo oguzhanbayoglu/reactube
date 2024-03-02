@@ -14,7 +14,7 @@ const Sidebar = ({ selectedCategory, setSelectedCategory }) => {
             onClick={() => {
               setSelectedCategory(cat.name);
               console.log("click");
-              nav("/");
+              nav("reactube");
             }}
             className="catBtn flex lg:w-36 hover:w-36 items-center p-2 hover:bg-red-600 group rounded-full transition-all duration-150"
           >

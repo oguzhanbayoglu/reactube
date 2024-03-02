@@ -24,7 +24,7 @@ const App = () => {
           <Routes>
             <Route
               exact
-              path="/"
+              path="reactube"
               element={<Feed selectedCategory={selectedCategory} />}
             />
             <Route path="/video/:id" element={<VideoDetails />} />
