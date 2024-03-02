@@ -8,7 +8,7 @@ const VideoCard = ({
   },
 }) => {
   return (
-    <div className="card card-compact w-[20.2rem] max-h-[20rem] bg-transparent transition-[background-color] duration-[150ms]">
+    <div className="card card-compact w-[18.2rem] md:w-[20.2rem] max-h-[20rem] bg-transparent transition-[background-color] duration-[150ms]">
       <Link
         to={videoId ? `/video/${videoId}` : `/channel/${snippet?.channelId}`}
       >

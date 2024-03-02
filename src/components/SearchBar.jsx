@@ -25,7 +25,7 @@ const SearchBar = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
           type="text"
           placeholder="Search"
-          className="input h-[2.3rem] w-[30rem] rounded-full "
+          className="input h-[2.3rem] w-[10rem] md:w-[20rem] lg:w-[30rem] rounded-full "
         />
         <button type="submit" className="mx-4">
           <RiSearchLine />

@@ -7,10 +7,10 @@ const Comments = ({ comments }) => {
     <div>
       {comments?.map((comment) => (
         <>
-          <h2 className="text-lg font-bold">
+          <h2 className="text-lg font-bold wra">
             {comment?.snippet?.topLevelComment?.snippet?.authorDisplayName}
           </h2>
-          <p className="mb-6 text-sm">
+          <p className="mb-6 text-sm text-wrap">
             {comment?.snippet?.topLevelComment?.snippet?.textDisplay}
           </p>
         </>
